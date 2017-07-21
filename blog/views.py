@@ -13,6 +13,7 @@ def hello(req):
 
 
 def getOneStudent(req):
-    stu = Student.objects.get(stu_name="张三")
-    return HttpResponse(stu.stu_name)
+    stu = Student()
+
+    return HttpResponse('正在添加数据')
 
